@@ -364,7 +364,7 @@ function copyToClip(content, message) {
     }
 }
 function readFile() {
-    swal({ title: "\n上传中...", icon: "https://cdn.jsdelivr.net/gh/lbr77/CDN@db63c79/loading.gif", text: "\n", button: false, closeModal: false, });
+    swal({ title: "\n上传中...", icon: "https://cdn.jsdelivr.net/gh/HexoPlusPlus/CDN/loading.gif", text: "\n", button: false, closeModal: false, });
     var file = this.files[0];
     var f_name = file["name"].substring(file["name"].lastIndexOf(".") + 1);
     var reader = new FileReader();
@@ -404,7 +404,7 @@ function hpp_uploadimage(image, f_name) {
     ajax.send(image);
 };
 function hpp_upload_md() {
-    swal({ title: "\n上传中...", icon: "https://cdn.jsdelivr.net/gh/lbr77/CDN@db63c79/loading.gif", text: "\n", button: false, closeModal: false, });
+    swal({ title: "\n上传中...", icon: "https://cdn.jsdelivr.net/gh/HexoPlusPlus/CDN/loading.gif", text: "\n", button: false, closeModal: false, });
     var ajax = ajaxObject();
     ajax.open("post", '/hpp/admin/api/adddoc/' + choo.value, true);
     ajax.setRequestHeader("Content-Type", "text/plain");
@@ -429,7 +429,7 @@ function hpp_upload_md() {
     ajax.send(base64Encode(document.getElementById("text_hpp_doc_editor").value));
 }
 function hpp_get_md() {
-    swal({ title: "\n加载中...", icon: "https://cdn.jsdelivr.net/gh/lbr77/CDN@db63c79/loading.gif", text: "\n", button: false, closeModal: false, });
+    swal({ title: "\n加载中...", icon: "https://cdn.jsdelivr.net/gh/HexoPlusPlus/CDN/loading.gif", text: "\n", button: false, closeModal: false, });
     document.getElementById(`div_hpp_doc_editor`).style.display = "none";
     document.getElementById(`text_hpp_doc_editor`).style.display = "block";
     document.getElementById(`hpp_eye_hpp_doc_editor`).innerHTML = `<i class="fa fa-eye fa-2x"><\/i>`
@@ -468,7 +468,7 @@ function format(time) {
     return newTime;
 };
 function hpp_get_scaffolds(blog_title) {
-    swal({ title: "\n加载模板中...", icon: "https://cdn.jsdelivr.net/gh/lbr77/CDN@db63c79/loading.gif", text: "\n", button: false, closeModal: false, });
+    swal({ title: "\n加载模板中...", icon: "https://cdn.jsdelivr.net/gh/HexoPlusPlus/CDN/loading.gif", text: "\n", button: false, closeModal: false, });
     document.getElementById(`div_hpp_doc_editor`).style.display = "none";
     document.getElementById(`text_hpp_doc_editor`).style.display = "block";
     document.getElementById(`hpp_eye_hpp_doc_editor`).innerHTML = `<i class="fa fa-eye fa-2x"><\/i>`
@@ -495,7 +495,7 @@ function hpp_get_scaffolds(blog_title) {
 }
 
 function hpp_upload_draft() {
-    swal({ title: "\n上传中...", icon: "https://cdn.jsdelivr.net/gh/lbr77/CDN@db63c79/loading.gif", text: "\n", button: false, closeModal: false, });
+    swal({ title: "\n上传中...", icon: "https://cdn.jsdelivr.net/gh/HexoPlusPlus/CDN/loading.gif", text: "\n", button: false, closeModal: false, });
     var ajax = ajaxObject();
     ajax.open("post", '/hpp/admin/api/adddraft/' + choo.value, true);
     ajax.setRequestHeader("Content-Type", "text/plain");
@@ -520,7 +520,7 @@ function hpp_upload_draft() {
     ajax.send(base64Encode(document.getElementById("text_hpp_doc_editor").value));
 }
 function hpp_get_draft() {
-    swal({ title: "\n加载中...", icon: "https://cdn.jsdelivr.net/gh/lbr77/CDN@db63c79/loading.gif", text: "\n", button: false, closeModal: false, });
+    swal({ title: "\n加载中...", icon: "https://cdn.jsdelivr.net/gh/HexoPlusPlus/CDN/loading.gif", text: "\n", button: false, closeModal: false, });
     document.getElementById(`div_hpp_doc_editor`).style.display = "none";
     document.getElementById(`text_hpp_doc_editor`).style.display = "block";
     document.getElementById(`hpp_eye_hpp_doc_editor`).innerHTML = `<i class="fa fa-eye fa-2x"><\/i>`
@@ -543,7 +543,7 @@ function hpp_get_draft() {
     ajax.send(new Date().getTime());
 }
 function hpp_del_index() {
-    swal({ title: "\n加载中...", icon: "https://cdn.jsdelivr.net/gh/lbr77/CDN@db63c79/loading.gif", text: "\n", button: false, closeModal: false, });
+    swal({ title: "\n加载中...", icon: "https://cdn.jsdelivr.net/gh/HexoPlusPlus/CDN/loading.gif", text: "\n", button: false, closeModal: false, });
     var ajax = ajaxObject();
     ajax.open("post", '/hpp/admin/api/index_del', true);
     ajax.setRequestHeader("Content-Type", "text/plain");
